@@ -171,7 +171,7 @@
     
     /* 어바웃 페이지 */
     #section1 .intro h1{
-        background:url(/images/aboutTitM.png) no-repeat center;
+        background:url(../images/aboutTitM.png) no-repeat center;
     }
     
     #section1 .align{
@@ -207,7 +207,7 @@
     
     /* 스킬 페이지 */
     #section2 .intro h1{
-        background:url(/images/skillTitM.png) no-repeat center;
+        background:url(../images/skillTitM.png) no-repeat center;
     }
     .skillList{
         width:calc(100% - 30px);
@@ -242,7 +242,7 @@
     
     /* 워크 페이지 */
     #section3 .intro h1{
-        background:url(/images/workTitM.png) no-repeat center;
+        background:url(../images/workTitM.png) no-repeat center;
     }
     #workList{
         width:calc(100% - 30px);
@@ -299,7 +299,7 @@
     /* 컨택트 페이지 */
     #section4{}
     #section4 .intro h1{
-        background:url(/images/contactTitM.png) no-repeat center;
+        background:url(../images/contactTitM.png) no-repeat center;
         left:auto;
         margin-left: auto;
     }
