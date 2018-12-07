@@ -1,0 +1,485 @@
+/*768px*/
+@media screen and (max-width:768px){
+    body{
+        min-width: auto;
+    }
+    .inner{
+        width:auto;
+    }
+    .inner1200{
+        width:auto;
+    }
+    #container{}
+    
+    
+    /* 헤더_패널메뉴 */
+    #header{
+        height:50px;
+    }
+    #header h1{}
+    #header h1 a img{
+        height:80px;
+        left:15px;
+    }
+    
+    .gnb{
+        display: none;
+    }
+    .panel{
+        display:block;
+        position:absolute;
+        top:14px;
+        right:15px;
+    }
+    .panel:before,.panel:after{
+        content:"";
+        display:block;
+        width:25px;
+        height:2px;
+        background:#000;        
+    }
+    .panel span{
+        width:30px;
+        height:2px;
+        display:block;
+        background:#000;
+        margin:8px 0;
+        text-indent:-9999px;
+    }
+    
+    /* 패널오픈 */
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .sidenav a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #666;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #222;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color:#222;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    .sidenav  a img{
+        width:130px;
+        margin-top:100px;
+    }
+    
+    /* 푸터 높이 조정 */
+    #footer{
+        height:50px;
+        line-height: 50px;
+    }
+    
+    
+    
+    /* 메인 페이지 */
+    #section0{
+    }
+    .sWrap{
+        width:120px;
+        height:211px;
+        margin: 70px auto 0;
+        position: static;
+        background:url(../images/signitureS.png) no-repeat center;
+        background-size: 100%;
+    }
+    
+    .dotS{
+        width:20px;
+        height:20px;
+        animation:boxS 2s forwards linear alternate;}
+        @keyframes boxS{
+            0%{
+                top:-30px;
+                left:-30px;
+            }
+            25%{
+                top:-30px;
+                left:130px;
+            }
+            50%{
+                top:221px;
+                left:130px;
+            }
+            75%{
+                top:221px;
+                left:-30px;
+            }
+            100%{
+                left:-30px;
+                top:-30px;
+            }
+    }
+
+    .typist{
+        display: none;
+    }
+    
+    /* 페이지 타이틀 통합 */
+    .intro{
+        padding-top:70px;
+    }
+    .intro h1{
+        width:150px;
+        height:40px;
+        margin: 0 auto;
+        position: static;
+    }
+    .intro h1 img{
+        display: none;
+    }
+    .align{
+        text-align: center;
+        line-height: calc(100vh - 110px);
+    }
+    .alignH{
+        width: 100%;
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    /* 어바웃 페이지 */
+    #section1 .intro h1{
+        background:url(/images/aboutTitM.png) no-repeat center;
+    }
+    
+    #section1 .align{
+        width:calc(100% - 30px);
+        margin: 0 auto;
+    }
+    .profileImage{
+        width:100%;
+        height:130px;
+    }
+    .profileText img{
+        width:100%;
+    }
+    
+    #section1 .inner dl{
+        display: none;
+    }
+    .keywordM{
+        width:100%;
+        display: block;
+    }
+    .keywordM li{
+        width:33.3%;
+        height:40px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 800;
+        float:left;
+    }
+    
+    
+    
+    
+    /* 스킬 페이지 */
+    #section2 .intro h1{
+        background:url(/images/skillTitM.png) no-repeat center;
+    }
+    .skillList{
+        width:calc(100% - 30px);
+        margin: 0 auto;
+    }
+    .skillList li{
+        width:calc(50% - 5px);
+        height:136px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .skillList li:nth-child(2n){
+        margin-right: 0;
+    }
+    .list1{}
+    .list2{}
+    
+    .skillList li img{
+        width:90px;
+        margin-left:-45px;
+        margin-top:-55px;
+    }
+    .skillP{
+        padding-top:105px;
+    }
+    
+    .textWrap{
+        line-height: 136px;
+    }
+    
+    
+    
+    /* 워크 페이지 */
+    #section3 .intro h1{
+        background:url(/images/workTitM.png) no-repeat center;
+    }
+    #workList{
+        width:calc(100% - 30px);
+        margin: 0 auto;
+        position: relative;
+        text-align: left;
+    }
+    #workList .slick-slide{
+        margin:0 5px;
+    }
+    #workList .slick-slide a{
+        padding:0;
+    }
+    #workList .slick-slide a h2{
+        font-size:18px;
+        margin: 5px;
+    }
+    #workList .slick-slide a p{
+        right:10px;
+        font-size: 12px;
+        text-align: right;
+    }
+    #workList .slick-slide a p img{
+        width:15px;
+        animation:scroll 1s infinite linear alternate;
+    }
+    @keyframes scroll{
+        0%{
+            left:10px;
+        }
+        50%{
+            left:5px;
+        }
+        100%{
+            left:10px;
+        }
+    }
+    
+    .prevBtn,.nextBtn{
+        width:16px;
+        height:30px;
+        position: absolute;
+        top:50%;
+        margin-top: -13px;
+    }
+    .prevBtn{
+        left:-15px;
+    }
+    .nextBtn{
+        right:-15px;
+    }
+    
+    
+    /* 컨택트 페이지 */
+    #section4{}
+    #section4 .intro h1{
+        background:url(/images/contactTitM.png) no-repeat center;
+        left:auto;
+        margin-left: auto;
+    }
+    .contactBox{
+        width:250px;
+        height:250px;
+        border:2px solid #222;
+        box-sizing: border-box;
+        padding:25px;
+        animation:boxC 3s infinite linear;
+    }
+    @keyframes boxC{
+        0%{
+            top:-20px;
+            left:0;
+        }
+        25%{
+            top:-10px;
+            left:-10px;
+        }
+        50%{
+            top:0;
+            left:0;
+        }
+        75%{
+            top:-10px;
+            left:10px;
+        }
+        100%{
+            left:0;
+            top:-20px;
+        }
+    }
+    
+    .contactName p{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .basicName span{
+        font-size: 18px;
+    }
+    
+    .contactText{
+        width:230px;
+        bottom:25px;
+        left:50%;
+        margin-left:-115px;
+        color:#222;
+    }
+    .contactText p{
+        text-decoration: underline;
+        line-height: 25px;
+        font-size: 16px;
+    }
+    
+    
+    
+    
+    /* 워크_서브페이지 */
+    #subHeader{
+        height:50px;
+    }
+    #subHeader h1{}
+    #subHeader h1 a img{
+        height:80px;
+        position: absolute;
+        top:5px;
+        left:15px;
+    }
+        /* 워크GNB */
+    .workGnb{}
+    .workGnb .inner{
+        height:50px;
+    }
+    .workGnb h2{
+        line-height: 50px;
+        margin-left:60px;
+        margin-right:15px;
+        font-size: 18px;
+    }
+    .workMenu{
+        line-height:50px;
+    }
+    .workMenu li{
+        width:auto;
+        padding:0 8px;
+    }
+    .workMenu li a{
+        font-size: 13px;
+    }
+    .backWorkList{
+        display: none;
+    }
+    .backWorkM{
+        width:130px;
+        height:30px;
+        margin: 5px auto;
+        line-height: 30px;
+        text-align: center;
+        background:#222;
+        display: block;
+    }
+    .backWorkM a{
+        color:#fff;
+        font-size: 14px;
+    }
+    .vList{
+        width:calc(100% - 20px);
+        margin:40px auto;
+    }
+    .vList h2{
+        font-size: 17px;
+        text-align: center;
+        width:calc(100% - 30px);
+        margin: 0 auto;
+        margin-top:30px;
+        position: relative;
+    }
+    .workView{
+        width:calc(100% - 30px);
+        margin: 30px auto;
+    }
+    .workView img{
+        width:100%;
+    }
+        /* 사이트컨셉/정보 */
+    .siteInfo{}
+    .siteInfo div{
+        width:100%;
+        height:auto;
+        display: block;
+        font-size: 15px;
+        padding:0 20px;
+    }
+    .siteInfo div h3{
+        margin-bottom: 10px;
+    }
+        /* 메인 컬러 */
+    .infoColor{
+        border-right:0;
+    }
+    .colorChip,.paddingB{
+        margin-bottom: 35px;
+    }
+    .colorChip li{
+        width:25px;
+        height:25px;
+        margin-right: 10px;
+        float:left;
+    }
+    .color01{
+        background:#37465b;
+    }
+    .color02{
+        background:#96bbb3;
+    }
+    .color03{
+        background:#f75672;
+    }
+    .infoColor p{
+        font-size: 18px;
+    }
+
+        /* 작업 정보 */
+    .infoPart{
+        border-left:0;
+    }
+    .infoPart p{
+        font-size: 15px;
+    }
+
+     /* 사이트 바로 가기 */
+    .siteInfo .connectSite{
+        width:130px;
+        height:30px;
+        line-height: 30px;
+        padding:0;
+    }
+    .connectSite a{
+        font-size: 14px;
+        display: block;
+    }
+}

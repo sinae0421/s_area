@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+
+
+/*컨테이너*/
+#container{
+    padding:0;
+}
+
+/* 워크페이지 */
+/* 워크 view list */
+.workVList{}
+.vList{
+    width:100%;
+    background:#fff;
+    border:1px solid #666;
+    margin: 50px 0;
+    transition: background 0.5s;
+}
+.vList:hover{
+    background:#ddd;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.vList h2{
+    font-size: 20px;
+    width:1000px;
+    margin: 0 auto;
+    margin-top:50px;
+    position: relative;
+}
+.vList h2:before{
+    content: "";
+    display:block;
+    width:8px;
+    height:8px;
+    background:#222;
+    position: absolute;
+    top:-10px;
+    left:-10px;
+}
+.workView{
+    width:1000px;
+    margin: 30px auto;
+}
+.workView img{
+    display: block;
+}
+
+    /* 사이트 컨셉/정보 */
+.siteInfo{
+    font-size: 0;
+}
+.siteInfo div{
+    font-size: 16px;
+    width:50%;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding:0 30px;
+    height:200px;
+}
+.siteInfo div h3{
+    margin-bottom: 15px;
+}
+    /* 메인 컬러 */
+.infoColor{
+    border-right:1px solid #666;
+}
+.colorChip{
+    margin-bottom: 35px;
+}
+.colorChip li{
+    width:50px;
+    height:50px;
+    margin-right: 10px;
+    float:left;
+}
+.color01{
+    background:#37465b;
+}
+.color02{
+    background:#96bbb3;
+}
+.color03{
+    background:#f75672;
+}
+.infoColor p{
+    font-size: 18px;
+}
+
+    /* 작업 정보 */
+.infoPart{
+    border-left:1px solid #666;
+}
+.infoPart p{}
+
+ /* 사이트 바로 가기 */
+.siteInfo .connectSite{
+    text-align: center;
+    display: block;
+    width:170px;
+    margin: 0 auto;
+    height:40px;
+    line-height: 40px;
+    border: 1px solid #222;
+    margin: 30px auto;
+    transition: all 0.5s;
+}
+.connectSite a{
+    color:#222;
+}
+.connectSite:hover{
+    background:#222;
+}
+.connectSite:hover a{
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,583 @@
+@charset "utf-8";
+
+
+
+
+/*컨테이너*/
+#container{
+}
+
+.sidenav{
+    display: none;
+}
+
+/* Main */
+#section0{
+    background:url(../images/mainBg.jpg) no-repeat left center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainSignitual{
+    position: relative;
+    height:100%;
+}
+.sWrap{
+    width:228px;
+    height:400px;
+    position: absolute;
+    left:100px;
+    top:170px;
+    background:url(../images/signitureS.png) no-repeat center;
+}
+.dotS{
+    width:40px;
+    height:40px;
+    background:#000;
+    position: relative;
+    z-index:999;
+    animation:boxS 3s forwards linear alternate;
+}
+@keyframes boxS{
+    0%{
+        top:-50px;
+        left:-50px;
+    }
+    25%{
+        top:-50px;
+        left:238px;
+    }
+    50%{
+        top:410px;
+        left:238px;
+    }
+    75%{
+        top:410px;
+        left:-50px;
+    }
+    100%{
+        left:-50px;
+        top:-50px;
+    }
+}
+
+.typist{
+    width:400px;
+    height:300px;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    right:200px;
+    top:50%;
+    margin-top: -150px;
+/*    transform: translateY(-50%);*/
+}
+
+
+    /* scroll */
+#section0 a{
+    display: block;
+}
+.scroll{
+    width:50px;
+    position: absolute;
+    bottom:45px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.dd{
+    width:40px;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:5px;
+}
+.scrollDown{
+    width:40px;
+    animation:scrollDown 1s infinite linear alternate;
+    position: relative;
+}
+@keyframes scrollDown{
+    0%{
+        top:0;
+    }
+    50%{
+        top:10px;
+    }
+    100%{
+        top:0;
+    }
+}
+
+
+
+/* About */
+#section1{
+    text-align: center;
+    font-size: 14px;
+}
+.intro{
+    text-align: center;
+    position: relative;
+    padding-top: 150px;
+}
+.intro h1{
+    position: absolute;
+    top:150px;
+}
+.intro h1 img{
+    display: block;
+}
+.profileImage{
+    width:1000px;
+    margin: 0 auto;
+    height:160px;
+    background:url(../images/profileS.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    transition: background 1s;
+}
+.profileImage:hover{
+    background:url(../images/profile.jpg) no-repeat center;
+    background-size: cover;
+}
+    /* 이미지라인 */
+.top,.bottom{
+    width:0;
+    height:2px;
+    position: absolute;
+    background:#222;
+    z-index: 100;
+    transition: all 0.5s;
+}
+.top{
+    top:0;
+    left:0;
+}
+.bottom{
+    bottom:0;
+    right:0;
+}
+.profileImage:hover .top{
+    width:100%;
+}
+.profileImage:hover .bottom{
+    width:100%;
+}
+.left,.right{
+    width:2px;
+    height:0;
+    position: absolute;
+    background:#222;
+    z-index: 100;
+    transition: all 0.5s;
+}
+.left{
+    bottom:0;
+    left:0;
+}
+.right{
+    top:0;
+    right:0;
+}
+.profileImage:hover .left{
+    height:100%;
+}
+.profileImage:hover .right{
+    height:100%;
+}
+
+.profileText{
+    text-align: center;
+}
+.aboutHello{
+    margin-top:10px;
+}
+
+.square{
+    margin: 25px auto;
+    width:10px;
+    height:10px;
+    background:#222;
+}
+
+#section1 dl{
+    float:left;
+    width:33.3%;
+    height:220px;
+    background:rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition: all 0.3s;
+}
+#section1 dl:hover{
+    background:#777;
+    color:#fff;
+}
+#section1 dl dt{
+    height:45px;
+    line-height: 45px;
+    border-top:2px solid #222;
+    border-bottom:2px solid #222;
+    box-sizing: border-box;
+}
+#section1 dl dt:before{
+    content: "";
+    display:none;
+    width:5px;
+    height:5px;
+    background:#ddd;
+    position: absolute;
+    left:130px;
+    top:10px;
+}
+#section1 dl:hover dt:before{
+    display: block;
+}
+#section1 dl dd{
+    line-height: 35px;
+    position: relative;
+}
+
+
+    /* 말풍선 */
+.balloon {
+    display: inline-block;
+    position: relative;
+    background: #ccc;
+    height: 50px;
+    width: 120px;
+    margin: 0 auto 10px;
+    border: 1px solid #999;
+    position: absolute;
+    bottom:30px;
+    right:10px;
+    font-size: 13px;
+    color:#222;
+    line-height: 18px;
+    display: none;
+}
+.balloon:after {
+    content: '';
+    position: absolute;
+    border-top: 10px solid #ccc;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -9px;
+    left: 5px;
+}
+.balloon:before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid #999;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -11px;
+    left: 5px;
+}
+#section1 dl dd:hover .balloon{
+    display: block;
+}
+
+.keywordM{
+    display: none;
+}
+
+
+
+/* Skills */
+#section2 .intro h1{
+    right:0;
+}
+.skillList{}
+.list1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.list2 {
+}
+.skillList li{
+    width:200px;
+    height:200px;
+    margin-right: 40px;
+    color:#fff;
+    border:2px solid #222;
+    box-sizing: border-box;
+    text-align: center;
+    float:left;
+    position: relative;
+    transition: background 0.5s;
+}
+.listBg1{
+    background:#7da7d9;
+}
+.listBg2{
+    background:#f6824a;
+}
+.listBg3{
+    background:#f85406;
+}
+.listBg4{
+    background:#0072bc;
+}
+.listBg5{
+    background:#f9ca0d;
+}
+.listBg6{
+    background:#0054a6;
+}
+.skillList li img{
+    position: absolute;
+    top:50%;
+    margin-top: -70px;
+    left:50%;
+    margin-left: -55px;
+}
+.skillList li p{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.skillP{
+    padding-top:150px;
+}
+
+.textWrap{
+    position: absolute;
+    width:100%;
+    height:100%;
+    line-height: 200px;
+    display: none;
+}
+.textAlign{
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.hoverP{
+    color:#fff;
+    position: relative;
+}
+.hoverP:before{
+    content: "";
+    display: block;
+    width:5px;
+    height:5px;
+    background:#fff;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+}
+
+    /* hover */
+.skillList li:hover{
+    background:#222;
+}
+.skillList li:hover img{
+    display: none;
+}
+.skillList li:hover .skillP{
+    display: none;
+}
+.skillList li:hover .textWrap{
+    display: block;
+}
+
+
+
+/* Work */
+#section3{
+    background:url(../images/workBg1.jpg) no-repeat center;
+    background-size: cover;
+}
+#workList{
+    width:1000px;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+}
+#workList .slick-list{}
+#workList .slick-slide{
+    width:100%;
+    margin: 0 10px;
+    border:2px solid #222;
+    box-sizing:border-box;
+    overflow: hidden;
+    height:220px;
+    background:rgba(255, 255, 255, 0.6);
+    position:relative;
+    transition: all 0.5s;
+}
+#workList .slick-slide a{
+    padding:15px;
+    color:#222;
+    display: block;
+    height:100%;
+}
+#workList .slick-slide a h2{
+    font-size: 25px;
+    font-weight: 800;
+}
+.dotW{
+    width:5px;
+    height:5px;
+    display: ;
+    position: relative;
+}
+
+#workList .slick-slide a p{
+    width:120px;
+    position: absolute;
+    right:15px;
+    bottom:15px;
+}
+#workList .slick-slide a p img{
+    width:22px;
+    float:right;
+    animation:scroll 1s infinite linear alternate;
+    position: relative;
+}
+@keyframes scroll{
+    0%{
+        left:-10px;
+    }
+    50%{
+        left:0;
+    }
+    100%{
+        left:-10px;
+    }
+}
+#workList .slick-slide .on{
+    display: none;
+}
+
+
+    /* hover */
+#workList .slick-slide:hover{
+    background:rgba(0, 0, 0, 0.8);
+}
+#workList .slick-slide:hover a{
+    color:#fff;
+}
+#workList .slick-slide:hover .dotW{
+    background:#fff;
+}
+#workList .slick-slide:hover .on{
+    display: block;
+}
+#workList .slick-slide:hover .off{
+    display: none;
+}
+
+
+
+    /* prev, next */
+.prevBtn,.nextBtn{
+    width:26px;
+    height:48px;
+    position: absolute;
+    top:50%;
+    margin-top: -24px;
+}
+.prevBtn{
+    left:-36px;
+}
+.nextBtn{
+    right:-36px;
+}
+
+
+
+/* contact */
+#section4{
+    background:url(../images/contactBg.jpg) no-repeat center;
+    background-size: cover;
+}
+#section4 .intro{
+}
+#section4 .intro h1{
+    left:50%;
+    margin-left: -120px;
+}
+
+.heightAlign{
+    height:100%;
+    position: relative;
+}
+.contactBox{
+    margin: 0 auto;
+    width:400px;
+    height:400px;
+    background:rgba(255, 255, 255, 0.6);
+    text-align: center;
+    border:2px solid #222;
+    box-sizing: border-box;
+    padding-top:70px;
+    position: relative;
+    transition: all 0.5s;
+    animation:boxC 3s infinite linear;
+}
+@keyframes boxC{
+    0%{
+        top:70px;
+        left:0;
+    }
+    25%{
+        top:80px;
+        left:-10px;
+    }
+    50%{
+        top:90px;
+        left:0;
+    }
+    75%{
+        top:80px;
+        left:10px;
+    }
+    100%{
+        left:0;
+        top:70px;
+    }
+}
+
+.contactName{}
+.contactName p{
+    font-size: 32px;
+    font-weight: 700;
+}
+.basicName{}
+.basicName span{
+    font-size: 20px;
+}
+.hiddenName{
+    display: none;
+}
+
+.contactText{
+    position: absolute;
+    width:230px;
+    bottom:70px;
+    left:50%;
+    margin-left:-115px;
+    color:#222;
+}
+.contactText p{
+    text-decoration: underline;
+    line-height: 30px;
+}
+
+.contactBox:hover{
+    background:rgba(0, 0, 0, 0.8);
+}
+.contactBox:hover .basicName{
+    display: none;
+}
+.contactBox:hover .hiddenName{
+    display: block;
+}
+.contactBox:hover img{
+    display: none;
+}
+.contactBox:hover p{
+    color:#fff;
+}
