@@ -13,7 +13,7 @@
 
 /* Main */
 #section0{
-    background:url(/images/mainBg.jpg) no-repeat left center;
+    background:url(./images/mainBg.jpg) no-repeat left center;
     background-size: cover;
     position: relative;
 }
