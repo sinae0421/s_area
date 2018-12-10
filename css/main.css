@@ -243,7 +243,7 @@
 .balloon {
     display: inline-block;
     position: relative;
-    background: #ccc;
+    background: #222;
     height: 50px;
     width: 120px;
     margin: 0 auto 10px;
@@ -252,7 +252,7 @@
     bottom:30px;
     right:10px;
     font-size: 13px;
-    color:#222;
+    color:#fff;
     line-height: 18px;
     display: none;
 }
