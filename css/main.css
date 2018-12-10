@@ -124,6 +124,7 @@
 .intro h1{
     position: absolute;
     top:150px;
+    z-index:100;
 }
 .intro h1 img{
     display: block;
