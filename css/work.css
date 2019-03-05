@@ -133,6 +133,65 @@
 
 
 
+/*etc페이지*/
+.etcView{
+    width:1000px;
+    margin: 0 auto;
+}
+.etcView li{
+    width:320px;
+    height:320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background:;
+    overflow: hidden;
+    float: left;
+}
+.etcView li:nth-child(3n){
+    margin-right: 0;
+}
+
+
+.artwork01{
+    background:url(../images/sub/artwork01.jpg) center;
+    background-size: cover;
+}
+.artwork02{
+    background:url(../images/sub/artwork02.png) center;
+    background-size: cover;
+}
+.artwork03{
+    background:url(../images/sub/artwork03.jpg) center;
+    background-size: cover;
+}
+.artwork04{
+    background:url(../images/sub/artwork04.png) center;
+    background-size: cover;
+}
+.artwork05{
+    background:url(../images/sub/artwork05.png) center;
+    background-size: cover;
+}
+.artwork06{
+    background:url(../images/sub/artwork06.png) center;
+    background-size: cover;
+}
+.artwork07{
+    background:url(../images/sub/artwork07.png) center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
