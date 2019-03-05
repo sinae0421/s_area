@@ -44,6 +44,7 @@
 }
 .workView img{
     display: block;
+    margin: 0 auto;
 }
 
     /* 사이트 컨셉/정보 */
@@ -75,13 +76,26 @@
     margin-right: 10px;
     float:left;
 }
-.color01{
+
+.wView1.color01{
+    background:#f7f2e6;
+}
+.wView1.color02{
+    background:#431e1d;
+}
+.wView1.color03{
+    background:#ff9aa5;
+}
+.infoColor p{
+    font-size: 18px;
+}
+.wView2.color01{
     background:#37465b;
 }
-.color02{
+.wView2.color02{
     background:#96bbb3;
 }
-.color03{
+.wView2.color03{
     background:#f75672;
 }
 .infoColor p{
